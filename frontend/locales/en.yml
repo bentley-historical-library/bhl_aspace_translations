@@ -1,0 +1,116 @@
+en:
+  section_tooltips: &section_tooltips
+    dates_tooltip: |
+        <p>Identifies and records the date(s) that pertain to the creation, assembly, accumulation, and/or maintenance and use of the materials being described.</p>
+        <p>See DACS 2.4</p>
+    extents_tooltip: |
+        <p>Indicates the extent and the physical nature of the materials being described.</p>
+        <p>See DACS 2.5</p>
+    linked_agents_tooltip: |
+        <p>Associates agents as a creator, source, or subject of the materials described to provide information about their context.</p>
+    subjects_tooltip: |
+        <p>Used for linking Subjects with the materials described.</p>
+    notes_tooltip: |
+        <p>Additional descriptive information about the materials described, usually in the form of text or structured lists.</p>
+    external_documents_tooltip: |
+        <p>Links to information in other description or management systems, such as donor files, processing plans, etc.</p>
+    rights_statements_tooltip: |
+        <p>Information about the rights status of the materials described and whether there are specific restictions or permissions that have been indicated.</p>
+    instances_tooltip: |
+        <p>Links description to information about physical or digital instantiations of material.</p>
+    deaccessions_tooltip: |
+        <p>Records information about materials that may have been separated and discarded, returned to a donor, or transferred to another institution.</p>
+    collection_management_tooltip: |
+        <p>Additional, internal-only information about how the materials described will be or have been processed.</p>
+    classification_tooltip: |
+        <p>Used for linking the materials described to a Classification or a Classification Term (e.g. a record group system) managed within the application.</p>
+    user_defined_tooltip: |
+        <p>User defined fields for recording additional information not captured in other sections of the application.</p>
+
+  archival_object: &archival_object_attributes
+    level_tooltip: |
+      <p>REQUIRED FIELD. Indicates the hierachical level of the materials being described.</p>
+      <p>Top level resource records default to "Collection."</p>
+      <p>For lower-level components, refer to the processing manual</p>
+    language_tooltip: |
+      <p>This field is used to record the primary language of the materials described by the Resource Record.</p>
+      <p>As only one language may be entered here, you will also use the "Language of Materials" note to document this information.</p>
+    publish_tooltip: |
+      <p>Determines whether this Resource/Archival Object will be included in an EAD export.</p>
+      <p>Set to Publish by default.</p>
+    restrictions_tooltip: |
+      <p>NOT USED</p>
+
+  date: &date_attributes
+    label_tooltip: |
+      <p>REQUIRED FIELD: The Bentley will always employ the "Creation" label for Resource and Archival Object dates.</p>
+    expression_tooltip: |
+      <p>REQUIRED FIELD. This field should contain a human readable expression of the date (or date range) for the material being described.</p>
+      <p>Examples:</p>
+      <ul>
+      <li>1968</li>
+      <li>1979-1993</li>
+      <li>1785-1960, bulk 1916-1958</li>
+      <li>1827, 1952-1978</li>
+      <li>circa 1870-1879</li>
+      <li>1906 March 17</li>
+      <li>undated</li>
+      </ul>
+    date_type_tooltip: |
+      <p>All archival materials will be described using the "Inclusive Dates" type (even if materials are from a single year)</p>
+      <p>If there is a concentration of materials for a particular span within the broader "Inclusive" date range, create a second date record and use the "Bulk Dates" type.</p>
+    era_tooltip: |
+      <p>NOT USED</p>
+    calendar_tooltip: |
+      <p>NOT USED</p>
+
+  extent: &extent_attributes
+    portion_tooltip: |
+      <p>This element indicates if a given extent record represents the entirety of the material being described or only a portion.</p>
+      <p>Ex.: A Resource record with two extent records (i.e., "10 linear feet" and "5 volumes") will have portions of "Part" and an Archival Object with a single extent record (i.e., "3 folders") will have a portion of "Whole"</p>
+    extent_type_tooltip: &extent_type_tooltip |
+      <p>This field will be used to record the type of unit for an extent statement. Remember, if there is more than one Type, multiple extent records must be used.</p>
+    container_type_tooltip: |
+      <p>This field will only be used to record additional information about an extent statement--for example, in situations where a difference in linear extent and number of boxes requires clarification (e.g., 2.5 Linear Feet of records "in 3 boxes").</p>
+    physical_details_tooltip: |
+      <p>The "Physical Details" field will be used to record information and special physical characteristics of content (including information necessary to access or use materials). This field could be used to specify the specific format of items (i.e., "VHS Cassettes" or "Architectural Drawings").</p>
+    dimensions_tooltip: |
+      <p>The "Dimensions" field can be used to document information about the size of the materials being described for a given extent. Usually includes numerical data; measurements may be expressed in any convenient unit (i.e., "8 x 10 inches").</p>
+
+  resource:
+    <<: *archival_object_attributes
+    <<: *section_tooltips
+    id_0_tooltip: |
+      <p>REQUIRED FIELD. Portions of the identifier will be generated automatically by the application.</p>
+    title_tooltip: |
+      <p>The Resource title should be brief and uniquely identify the material, noting both the, individual/entity primarily responsible for the creation or 
+      accumulation of the materials as well as the predominant unit of archival materials found in the collection. Ex. "papers", "records", "collection"</p>
+    resource_type_tooltip: |
+      <p>In ASpace, Resource type reflects on the nature of material (i.e., collection, papers, records).</p>
+      <p>Choose the appropriate term from the drop-down menu, using instructions in the "Title" section of the processing manual for guidance.</p>
+    repository_processing_note_tooltip: |
+      <p>NOT USED</p>
+    extents_tooltip: |
+      <p>The extent element helps researchers understand the overall amount of content in a collection and also yields information that is important for the Bentley's collection management practices.</p>
+      <p>As with dates, ASpace permits the documentation of very granular information about extents, including the type of extent measurement (i.e., "linear feet" or "oversize folders") and summary information about the containers.</p>
+
+  archival_record_date:
+    <<: *date_attributes
+
+  date_fields:
+    <<: *date_attributes
+
+  date_type_single:
+    <<: *date_attributes
+
+  date_type_bulk:
+    <<: *date_attributes
+
+  date_type_inclusive:
+    <<: *date_attributes
+
+  date_type_range:
+    <<: *date_attributes
+
+  date_label:
+    <<: *date_attributes
