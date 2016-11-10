@@ -1,4 +1,36 @@
 en:
+  user_defined: &user_defined_attributes
+    boolean_1: Acknowledged
+    boolean_2: Boolean 2
+    boolean_3: Boolean 3
+    integer_1: Integer 1
+    integer_2: Integer 2
+    integer_3: Integer 3
+    real_1: Real 1
+    real_2: Real 2
+    real_3: Real 3
+    string_1: StaffReceived
+    string_2: String 2
+    string_3: String 3
+    string_4: String 4
+    text_1: ThankYouNote
+    text_2: LocationInfo
+    text_3: Text 3
+    text_4: Text 4
+    text_5: Text 5
+    date_1: Date 1
+    date_1_inline_help: e.g. YYYY-MM-DD
+    date_2: Date 2
+    date_2_inline_help: e.g. YYYY-MM-DD
+    date_3: Date 3
+    date_3_inline_help: e.g. YYYY-MM-DD
+    enum_1: GiftAgreementStatus
+    enum_2: Classification 1
+    enum_3: Classification 2
+    enum_4: Controlled Value 4
+    _singular: User Defined
+    _plural: User Defined
+
   section_tooltips: &section_tooltips
     dates_tooltip: |
         <p>Identifies and records the date(s) that pertain to the creation, assembly, accumulation, and/or maintenance and use of the materials being described.</p>
@@ -159,6 +191,8 @@ en:
   resource:
     <<: *archival_object_attributes
     <<: *section_tooltips
+    user_defined:
+      <<: *user_defined_attributes
     id_0_tooltip: |
       <p>REQUIRED FIELD. Portions of the identifier will be generated automatically by the application.</p>
     title_tooltip: |
@@ -204,6 +238,11 @@ en:
       <p>Do not add Collection Management records to Resources.</p>
     user_defined_tooltip: |
       <p>Do not add User Defined fields to Resources.</p>
+
+  accession:
+    <<: *section_tooltips
+    user_defined:
+      <<: *user_defined_attributes
 
   revision_statement:
     date_tooltip: |
