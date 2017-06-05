@@ -24,10 +24,10 @@ en:
     date_2_inline_help: e.g. YYYY-MM-DD
     date_3: Date 3
     date_3_inline_help: e.g. YYYY-MM-DD
-    enum_1: GiftAgreementStatus
-    enum_2: Classification 1
-    enum_3: Classification 2
-    enum_4: Controlled Value 4
+    enum_1: BHL Classification 1
+    enum_2: BHL Classification 2
+    enum_3: BHL Classification 3
+    enum_4: GiftAgreementStatus
     _singular: User Defined
     _plural: User Defined
 
