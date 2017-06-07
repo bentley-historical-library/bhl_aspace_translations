@@ -9,12 +9,12 @@ en:
     real_1: Real 1
     real_2: Real 2
     real_3: Real 3
-    string_1: StaffReceived
+    string_1: Staff Received
     string_2: String 2
     string_3: String 3
     string_4: String 4
     text_1: DART Thank You Text
-    text_2: LocationInfo
+    text_2: Location Information
     text_3: Text 3
     text_4: Text 4
     text_5: Text 5
@@ -27,7 +27,7 @@ en:
     enum_1: BHL Classification 1
     enum_2: BHL Classification 2
     enum_3: BHL Classification 3
-    enum_4: GiftAgreementStatus
+    enum_4: Gift Agreement Status
     _singular: User Defined
     _plural: User Defined
 
