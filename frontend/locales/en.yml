@@ -9,12 +9,12 @@ en:
     real_1: Real 1
     real_2: Real 2
     real_3: Real 3
-    string_1: StaffReceived
+    string_1: Staff Received
     string_2: String 2
     string_3: String 3
     string_4: String 4
-    text_1: DART Thank You Text
-    text_2: LocationInfo
+    text_1: Text 1
+    text_2: Location Information
     text_3: Text 3
     text_4: Text 4
     text_5: Text 5
@@ -24,10 +24,10 @@ en:
     date_2_inline_help: e.g. YYYY-MM-DD
     date_3: Date 3
     date_3_inline_help: e.g. YYYY-MM-DD
-    enum_1: GiftAgreementStatus
-    enum_2: Classification 1
-    enum_3: Classification 2
-    enum_4: Controlled Value 4
+    enum_1: BHL Classification 1
+    enum_2: BHL Classification 2
+    enum_3: BHL Classification 3
+    enum_4: Gift Agreement Status
     _singular: User Defined
     _plural: User Defined
 
@@ -41,7 +41,27 @@ en:
 
   linked_agent: &linked_agent_attributes
     role_tooltip: |
-      <p>Agents may hold one or more role within ASpace; the Bentley will only use two of the three available roles: Creator and Subject.</p>
+      <p>Agents may hold one or more role within ASpace.</p> 
+      <p>For Resources, the Bentley will only use two of the three available roles: Creator and Subject.</p>
+      <p>For Accessions, select the role of Source for the donor of the materials.</p>
+
+  deaccession:
+    <<: *section_tooltips
+    description_tooltip: |
+      <p>REQUIRED FIELD: Description of the materials that have been deaccessioned</p>
+      <p>Use the Description field to outline the type(s) of materials being separated: widely accessible publications, photocopies, sensitive data (i.e., PII-containing materials), duplicates, miscellaneous items, 3-D objects, unrelated materials, personal medical records, monthly financial reports, tax returns, physically damaged materials, etc. When dealing with separated removable media, such as physically damaged media, duplicate files, or other out of scope materials refer to the Archivematica Clean-Up guidelines.</p>
+    reason_tooltip: |
+      <p>Do not use this field</p>
+    disposition_tooltip: |
+      <p>A description of what was done with the deaccessioned material</p>
+      <p>Use one of the following options:<p>
+      <ul>
+      <li>DESTROYED - [name of the person who performed the task.] Include additional comments if necessary. </li>
+      <li>RETURN TO DONOR - Record the location of separations, so anyone looking for them can quickly find them. Include important transitional information such as "Donor was contacted by NAME on DATE"; "Donor will pick up separations on February 1, 2017."</li>
+      <li>CONFER WITH DONOR - Sometimes donors instruct the Bentley to destroy materials. In such cases, document this change here. (e.g., Donor instructed NAME to destroy on DATE.) Use instructions above for separations destined to be destroyed. If the donor asked for the materials to be returned, record it as well. </li>
+      <li>TO BE DETERMINED - Once the appropriate parties at the Bentley have made a decision about separations, record the decision and the consequential actions appropriately.</li>
+      <li>OTHER - Review the donor file, confer with the field archivist or Bentley Administration. </li>
+      </ul>
 
   archival_object: &archival_object_attributes
     level_tooltip: |
@@ -87,8 +107,6 @@ en:
       <p>Do not add Subjects to Archival Objects.</p>
     external_documents_tooltip: |
       <p>Do not add External Documents to Archival Objects.</p>
-    rights_statements_tooltip: |
-      <p>Do not add Rights Statements to Archival Objects.</p>
 
 
   date: &date_attributes
@@ -243,12 +261,119 @@ en:
     <<: *section_tooltips
     user_defined:
       <<: *user_defined_attributes
+    id_0_tooltip: |
+      <p>REQUIRED FIELD: The unique identifier for an accession. This field is populated automatically by the application.</p>
+    content_description_tooltip: |
+      <p>This free-text field should be used to record significant information about the nature and scope of an accession that will inform later decisions regarding the appraisal, arrangement, and description of materials</p>
+      <p>Use this field to:</p>
+      <ul>
+      <li>Record a summary description of the materials in the accession, with reference to format types and significant contextual information (such as creators, functions, related events, etc.)</li>
+      <li>Highlight unique or unusual material or subject matter within the accession</li>
+      <li>Document initial appraisal notes regarding the relative value of materials, items that should be separated, and the accessioning or field archivist’s overall degree of confidence in the preliminary appraisal carried out on the records</li>
+      <li>Note any steps taken by the archives since acquiring the materials (such as rehousing, weeding of items, transfer from legacy removable media, etc.)</li>
+      </ul>
+      <p>For digital material: Include the approximate extent and content (if readily available) of any removable media.</p>
+      <p>Once digital material has been transferred off of removable media, indicate which of the removable media indicated above has been transferred (e.g., "10 data CDs, 1 DVD and 4 3.5" floppy disks--content transferred from media")</p>
+    condition_description_tooltip: |
+      <p>This free-text field should be used to note any conservation issues or preservation concerns related to materials in the accession, including those specific to physical, analog, digital, or oversize materials.  Entering this information in a dedicated text field will help highlight and draw attention to the issues so that the Lead Archivist for Collections Management or processing staff may take appropriate steps.  The accessioning archivist should also make a conservation request through the Google Form.  When entering information, the accessioning archivist should be as specific as possible about the nature, severity, and extent of the problem.</p>
+    disposition_tooltip: |
+      <p>Use this free-text field to document how potential separations associated with the accession will be handled. This information should be taken directly from the Gift Agreement signed by the donor.  If the accession is an accrual and covered by an existing Gift Agreement, the accessioning archivist should refer back to the most current Gift Agreement. Typically, items are either destroyed or returned to the donor (though in some cases, they may be sent to a third party)</p>
+      <p>The options for separation include:</p>
+      <ul>
+      <li>Destroy (shred or discard, depending on content)</li>
+      <li>Destroy duplicates</li>
+      <li>Return to donor</li>
+      <li>Confer with donor</li>
+      <li>To be determined</li>
+      <li>Other (explain)</li>
+      </ul>
+      <p>In some cases, these conditions apply to separations as a whole (e.g., all separations are to be destroyed). Sometimes different parts of separations are to be treated differently (e.g., donor would like the photographs returned; the rest can be destroyed). Note all instructions specific to the disposition of materials in this field.</p>
+    inventory_tooltip: |
+      <p>Do not use this field. Information about inventories, box lists, or other related documents will be added as an External Document below<p>
+    provenance_tooltip: |
+      <p>This free-text field should be used to record the names (and positions or titles) of any individuals associated with the donor and/or creator who assisted with the transfer of materials.  This information will help field archivists or processors direct any questions that might arise about the handling of materials or the transfer itself.</p>
+    retention_rule_tooltip: |
+      <p>Do not use this field</p>
+    restrictions_apply_tooltip: |
+      <p>Do not use this field</p>
+    resource_type_tooltip: |
+      <p>Do not use this field. Resource type will be specified in the ArchivesSpace Resource during processing<p>
+    access_restrictions_tooltip: |
+      <p>Do not use this field</p>
+    access_restrictions_note_tooltip: |
+      <p>This free-text field is used to note any restrictions to patron access that should be imposed on the materials due to Bentley policy (i.e., 20 year restriction for Executive Officer records), laws (e.g., HIPAA or FERPA), sensitive data (e.g., SSNs), or as specified in the Gift Agreement.</p>
+      <p>This field should also be used if there are just questions or even the possibility of access restrictions that might be enforced for materials in the collection. Skip this field if there are no known or potential access restrictions that apply to material in the accession. </p>
+    use_restrictions_tooltip: |
+      <p>Do not use this field</p>
+    use_restrictions_note_tooltip: |
+      <p>This free-text field is used to note the copyright status of the accession as well as any restrictions to patron use specified in the Gift Agreement (such as limitations on reproducing materials). </p>
+      <p>The Bentley’s conventions for documenting copyright and/or use restrictions reflects the fact that 3rd party materials may be present in collections for which the donor was unable to transfer rights. Use one of the following statements: </p>
+      <ul>
+      <li>Copyright is held by the Regents of the University of Michigan but the collection may contain third-party materials for which copyright is not held. Patrons are responsible for determining the appropriate use or reuse of materials.</li>
+      <li>Copyright is not held by the Regents of the University of Michigan. Patrons are responsible for determining the appropriate use or reuse of materials. </li>
+      <li>Donor(s) have transferred any applicable copyright to the Regents of the University of Michigan but the collection may contain third-party materials for which copyright was not transferred. Patrons are responsible for determining the appropriate use or reuse of materials. </li>
+      <li>Donor(s) have not transferred any applicable copyright to the Regents of the University of Michigan. Patrons are responsible for determining the appropriate use or reuse of materials. </li>
+      <li>Copyright status is unknown. Patrons are responsible for determining the appropriate use or reuse of materials.</li>
+      </ul>
+    acquisition_type_tooltip: |
+      <p>This drop-down menu allows the accessioning archivist to indicate the type of acquisition:</p>
+      <ul>
+      <li>Deposit: not an outright gift and thus not formally part of the Bentley’s collections</li>
+      <li>Gift: for private donors or third parties not associated with the University of Michigan</li>
+      <li>Transfer: for U-M units</li>
+      <li>Purchase: mainly used for books or other items purchased for inclusion in the library’s collections.</li>
+      </ul>
+    publish_tooltip: |
+      <p>Leave unchecked</p>
+    title_tooltip: |
+      <p>Do not enter a title. DACS compliant titles will be added to ArchivesSpace Resources during processing</p>
+    linked_agents_tooltip: |
+      <p>Associates agents as a creator, source, or subject of the materials described to provide information about their context.</p>
+      <p>Create at least one Agent Link with the role of "Source" to indicate the donor of the materials.</p>
+      <p>Refer to the Bentley's <a href="https://sites.google.com/a/umich.edu/bhl-archival-curation/accessions/archivesspace-accessions#agents">accessioning guidelines</a> for more information</p>
+    external_documents_tooltip: |
+      <p>Link to submission documentation that accompanies accessions (e.g., box lists or other inventories, metadata spreadsheets, etc.) by creating adding an External Document.</p>
+      <p>First, save a copy of the submission documentation in the S:/ArchivesSpace/SubmissionDocumentation folder using the following convention:</p>
+      <p>S:/ArchivesSpace/SubmissionDocumentation/[DONOR#]/[ACCESSION#]/[Doc-Description_YYYYMMDD]</p>
+      <p>If you don't see a sub-folder inside the SubmissionDocumentation folder for the donor number, create it; likewise, if you don't see a sub-folder inside the donor number folder for the accession number, create it. When creating a filename for the file, be sure not to use any special characters (like /\?%*:|"<>.) or blank spaces in the filename)</p>
+      <p>Then, add the External Document, giving it a meaningful title and a link to its location with a file:/// prefix:</p>
+      <p>file:///S:/ArchivesSpace/SubmissionDocumentation/[DONOR#]/[ACCESSION#]/[Doc-Description_YYYYMMDD]</p>
+      <p>Refer to the Bentley's <a href="https://sites.google.com/a/umich.edu/bhl-archival-curation/accessions/archivesspace-accessions#externaldocs">accessioning guidelines</a> for more information</p>
+    instances_tooltip: |
+      <p>Links description to information about physical or digital instantiations of material.</p>
+      <p>Refer to the Bentley's <a href="https://sites.google.com/a/umich.edu/bhl-archival-curation/accessions/archivesspace-accessions#instances">accessioning guidelines</a> for more information</p>
+    deaccessions_tooltip: |
+      <p>The Bentley Historical Library uses the term "deaccessions" to refer to unprocessed accessioned materials that are formally deselected from processing all together.  In extremely rare cases, the Bentley may decide to transfer a processed collection to another institution or return material to the donor. Such instances also fall in the deaccessions category.</p>
+      <p>Bentley generally uses the term "separations" for materials that are not included in the final collection, or weeded during processing. </p>
+      <p>ArchivesSpace uses the term Deaccessions for both “separations” and “deaccessions.” In the majority of cases, processors will be recording separations under Deaccessions in ASpace.</p>
+      <p>Separations should be recorded within a corresponding Accession Record. If separations accumulated from multiple accessions and the originating accession is hard to indicate, record all separations under the latest accession. Separations-related activities are determined by the Gift Agreement. In most cases, refer to the Disposition note in the Basic Information section in order to determine how to appropriately handle deaccessions. </p>
+      <p>Refer to the Bentley's <a href="https://sites.google.com/a/umich.edu/bhl-archival-curation/accessions/archivesspace-accessions#deacc">accessioning guidelines</a> for more information</p>
+    collection_management_tooltip: |
+      <p>The accessioning archivist will fill out the following two fields of the Collection Management section: Processing Priority and Processing Status. The remaining sections will be filled out by the Lead Archivist for Collections Management. </p>
+      <p>Refer to the Bentley's <a href="https://sites.google.com/a/umich.edu/bhl-archival-curation/accessions/archivesspace-accessions#cm">accessioning guidelines</a> for more information</p>
+    dates_tooltip: |
+      <p>Do not add Dates to accessions. More precise inclusive and bulk dates will be added to ArchivesSpace Resources during processing. If you know an approximate date range for the materials in a given accession, indicate that in the content description text box.</p>
+    extents_tooltip: |
+      <p>Indicates the extent and the physical nature of the materials being described.</p>
+      <p>Refer to the Bentley's <a href="https://sites.google.com/a/umich.edu/bhl-archival-curation/accessions/archivesspace-accessions#extents">accessioning guidelines</a> for more information</p>
+    subjects_tooltip: |
+      <p>Do not add Subjects to Accessions</p>
+    rights_statements_tooltip: |
+      <p>Do not add Rights Statements to Accessions</p>
+    classification_tooltip: |
+      <p>DO not add Classifications to Accessions</p>
 
   revision_statement:
     date_tooltip: |
-      <p>Enter the date of the revision in a normalized format: YYYY-MM-DD (e.g., 2016-02-04, i.e., "February 4, 2016").</p>
+      <p>Enter the date of the revision in a normalized format: YYYY-MM-DD (e.g., 2016-02-04 instead of "February 4, 2016").</p>
     description_tooltip: |
       <p>Briefly describe significant revisions made. It is not necessary to describe every little change you made; instead, try to document the most significant revision.</p>
+
+  collection_management: &collection_management_attributes
+    processing_priority_tooltip: |
+      <p>Select the appropriate Processing Priority (High, Medium, Low) from the dropdown menu. The Processing Priority is determined by the field archivist responsible for the acquisition. </p>
+    processing_status_tooltip: |
+      <p>The accessioning archivist should select the Processing Status for the collection when material is initially received. In most cases this will be “backlog.”  When the collection is assigned to a processor, the Lead Archivist for Collection Management, will update this field to indicate that the material is “in progress” and “complete” one the finding aid (and all other descriptive tools) is posted online.</p>
 
   archival_record_date:
     <<: *date_attributes
