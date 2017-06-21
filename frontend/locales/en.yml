@@ -304,7 +304,14 @@ en:
       <p>Do not use this field</p>
     access_restrictions_note_tooltip: |
       <p>This free-text field is used to note any restrictions to patron access that should be imposed on the materials due to Bentley policy (i.e., 20 year restriction for Executive Officer records), laws (e.g., HIPAA or FERPA), sensitive data (e.g., SSNs), or as specified in the Gift Agreement.</p>
-      <p>This field should also be used if there are just questions or even the possibility of access restrictions that might be enforced for materials in the collection. Skip this field if there are no known or potential access restrictions that apply to material in the accession. </p>
+      <p>Example statements include:</p>
+      <ul>
+      <li>Entire accession is ER restricted for 20 years</li>
+      <li>Access to digital content is limited to the BHL reading room</li>
+      <li>Possible student records require access restrictions in boxes 12-18</li>
+      <li>Social Security and credit card numbers throughout the accession</li>
+      </ul>
+      <p>This field should also be used if there are just questions or even the possibility of access restrictions. Skip this field if there are no known or potential access restrictions that apply to material in the accession. </p>
     use_restrictions_tooltip: |
       <p>Do not use this field</p>
     use_restrictions_note_tooltip: |
