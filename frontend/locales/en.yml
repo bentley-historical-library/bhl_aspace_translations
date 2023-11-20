@@ -3,7 +3,7 @@ en:
     boolean_1: Acknowledged
     boolean_2: Baseline Candidate
     boolean_3: Boolean 3
-    integer_1: Integer 1
+    integer_1: Aeon Flag
     integer_2: Integer 2
     integer_3: Integer 3
     real_1: Real 1
@@ -14,7 +14,7 @@ en:
     string_3: String 3
     string_4: String 4
     text_1: Location Information
-    text_2: Text 2
+    text_2: Text 2 
     text_3: Text 3
     text_4: Text 4
     text_5: Text 5
