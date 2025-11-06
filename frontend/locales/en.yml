@@ -47,10 +47,10 @@ en:
   section_tooltips: &section_tooltips
     dates_tooltip: |
         <p>Identifies and records the date(s) that pertain to the creation, assembly, accumulation, and/or maintenance and use of the materials being described.</p>
-        <p>See DACS 2.4 and the <a href="https://sites.google.com/a/umich.edu/bhl-archival-curation/processing/processing-workflow/description/archival-description/common-archival-elements#h.ur8legqsz0xa">processing manual</a> for additional information.</p>
+        <p>See DACS 2.4 and the <a href="https://docs.google.com/document/d/1nuRXzWLd8GltAyrOV7-7aFhDDczq7yoLamxjKwPFnws/edit?tab=t.jpt4epy7k88q#bookmark=kix.szchksonkzxd">processing manual</a> for additional information.</p>
     extents_tooltip: |
         <p>Indicates the extent and the physical nature of the materials being described.</p>
-        <p>See DACS 2.5 and the <a href="https://sites.google.com/a/umich.edu/bhl-archival-curation/processing/processing-workflow/description/archival-description/common-archival-elements#h.9diuqwjgb6wz">processing manual</a>.</p>
+        <p>See DACS 2.5 and the <a href="https://docs.google.com/document/d/1nuRXzWLd8GltAyrOV7-7aFhDDczq7yoLamxjKwPFnws/edit?tab=t.jpt4epy7k88q#bookmark=id.c2edm3pm7ffn">processing manual</a>.</p>
 
   linked_agent: &linked_agent_attributes
     role_tooltip: |
@@ -80,7 +80,7 @@ en:
   archival_object: &archival_object_attributes
     level_tooltip: |
       <p>REQUIRED FIELD. Indicates the hierachical level of the materials being described.</p>
-      <p>For archival objects, refer to the <a href="https://sites.google.com/a/umich.edu/bhl-archival-curation/processing/processing-workflow/description/archival-description/common-archival-elements#h.66vyuf2un18q">processing manual</a> for instructions.</p>
+      <p>For archival objects, refer to the <a href="https://docs.google.com/document/d/1nuRXzWLd8GltAyrOV7-7aFhDDczq7yoLamxjKwPFnws/edit?tab=t.jpt4epy7k88q#bookmark=kix.yzsw9arcnrf5">processing manual</a> for instructions.</p>
     language_tooltip: |
       <p>Do not use this field on archival objects.</p>
     publish_tooltip: |
@@ -95,21 +95,21 @@ en:
       <p>Do not use this field except to FORCE Aeon to route to Restrictions Review.</p>
     title_tooltip: |
       <p>The title assigned to the materials described, including purely intellectual entities (such as series or subseries) as well as archival objects with actual manifestations of archival materials (container instances or digital objects). The title element is not necessary if you are describing a subordinate archival object that has inherited the description of a parent object and only needs to be distinguished by a date range. In these cases, skip creation of a title and only create a date record.</p>
-      <p>See the section in the processing manual on creating <a href="https://sites.google.com/a/umich.edu/bhl-archival-curation/processing/processing-workflow/description/archival-description/common-archival-elements#h.ukwdvqgbry65">titles</a> for additional information.</p>
+      <p>See the section in the processing manual on creating <a href="https://docs.google.com/document/d/1nuRXzWLd8GltAyrOV7-7aFhDDczq7yoLamxjKwPFnws/edit?tab=t.jpt4epy7k88q#bookmark=kix.rw41dy3fzfnr">titles</a> for additional information.</p>
     component_id_tooltip: |
       <p>Do not fill in this field.</p>
     notes_tooltip: |
-      <p>See the processing manual section on <a href="https://sites.google.com/a/umich.edu/bhl-archival-curation/processing/processing-workflow/description/archival-description/general#h.921fhzzljzx">archival object notes</a>.</p>
+      <p>See the processing manual section on <a href="https://docs.google.com/document/d/1nuRXzWLd8GltAyrOV7-7aFhDDczq7yoLamxjKwPFnws/edit?tab=t.jpt4epy7k88q#bookmark=id.p2r7uajj9jf5">archival object notes</a>.</p>
     instances_tooltip: |
       <p>Links description to information about physical or digital instantiations of material.</p>
       <p>Instances should be added to the lowest levels of description in a resource tree. Do not add instances at the resource level.</p>
-      <p>For further instruction, see the processing manual's section on creating <a href="https://sites.google.com/a/umich.edu/bhl-archival-curation/processing/processing-workflow/description/archival-description/general#h.ei80a8e2dnjg">instances</a>.</p>
+      <p>For further instruction, see the processing manual's section on creating <a href="https://docs.google.com/document/d/1nuRXzWLd8GltAyrOV7-7aFhDDczq7yoLamxjKwPFnws/edit?tab=t.szrddvtg7izu#bookmark=id.lx5ip7y7gov7">instances</a>.</p>
     dates_tooltip: |
         <p>Identifies and records the date(s) that pertain to the creation, assembly, accumulation, and/or maintenance and use of the materials being described.</p>
-        <p>See DACS 2.4 and the <a href="https://sites.google.com/a/umich.edu/bhl-archival-curation/processing/processing-workflow/description/archival-description/common-archival-elements#h.ur8legqsz0xa">processing manual</a> for additional information.</p>
+        <p>See DACS 2.4 and the <a href="https://docs.google.com/document/d/1nuRXzWLd8GltAyrOV7-7aFhDDczq7yoLamxjKwPFnws/edit?tab=t.jpt4epy7k88q#bookmark=id.y79kc4g7kwgt">processing manual</a> for additional information.</p>
     extents_tooltip: |
         <p>Indicates the extent and the physical nature of the materials being described.</p>
-        <p>See DACS 2.5 and the <a href="https://sites.google.com/a/umich.edu/bhl-archival-curation/processing/processing-workflow/description/archival-description/common-archival-elements#h.9diuqwjgb6wz">processing manual</a>.</p>
+        <p>See DACS 2.5 and the <a href="https://docs.google.com/document/d/1nuRXzWLd8GltAyrOV7-7aFhDDczq7yoLamxjKwPFnws/edit?tab=t.jpt4epy7k88q#bookmark=kix.6lbukh9oysif">processing manual</a>.</p>
     external_documents_tooltip: |
       <p>Do not add external documents to archival objects.</p>
     rights_statements_tooltip: |
@@ -170,7 +170,7 @@ en:
       <p>The title of the digital object should be the same as the title of the associated archival object.</p>
     digital_object_id_tooltip: |
       <p>Handle or URI of the digital object, will be the same as the "File URI".</p>
-      <p>See the section on <a href="https://sites.google.com/a/umich.edu/bhl-archival-curation/collections-management/locating-materials/digital-objects">digital objects</a>.</p>
+      <p>See the section on <a href="https://docs.google.com/document/d/1nuRXzWLd8GltAyrOV7-7aFhDDczq7yoLamxjKwPFnws/edit?tab=t.szrddvtg7izu#bookmark=id.wurev2ryqezl">digital objects</a>.</p>
     publish_tooltip: |
       <p>Determines whether this digital object will be included in an EAD export.</p>
       <p>Set to publish by default.</p>
@@ -192,7 +192,7 @@ en:
       <p>Do not use this field on digital objects.</p>
     notes_tooltip: |
       <p>Use "Notes" to create a "General Note" that will serve as the hyperlink's text.</p> 
-      <p>See the section on <a href="https://sites.google.com/a/umich.edu/bhl-archival-curation/collections-management/locating-materials/digital-objects">digital objects</a>.</p>
+      <p>See the section on <a href="https://docs.google.com/document/d/1nuRXzWLd8GltAyrOV7-7aFhDDczq7yoLamxjKwPFnws/edit?tab=t.szrddvtg7izu#bookmark=id.1g9rviwh2htl">digital objects</a>.</p>
     external_documents_tooltip: |
       <p>Do not use this field on digital objects.</p>
     rights_statements_tooltip: |
@@ -205,7 +205,7 @@ en:
   file_version:
     file_uri_tooltip: |
       <p>Handle or URI of the digital object, will be the same as the "Identifier".</p>
-      <p>See the section on <a href="https://sites.google.com/a/umich.edu/bhl-archival-curation/collections-management/locating-materials/digital-objects">digital objects</a>.</p>
+      <p>See the section on <a href="https://docs.google.com/document/d/1nuRXzWLd8GltAyrOV7-7aFhDDczq7yoLamxjKwPFnws/edit?tab=t.szrddvtg7izu#bookmark=id.lxf8re6m9g25">digital objects</a>.</p>
     publish_tooltip: |
       <p>Set to publish by default.</p>
     use_statement_tooltip: |
@@ -240,31 +240,31 @@ en:
       <p>Top level resource records default to "Collection."</p>
     resource_type_tooltip: |
       <p>Resource type reflects on the nature of material (i.e., collection, papers, records).</p>
-      <p>Choose the appropriate term from the drop-down menu, using instructions in the <a href="https://sites.google.com/a/umich.edu/bhl-archival-curation/processing/processing-workflow/description/archival-description/general#h.bgrjm7nwoktf">processing manual</a> for guidance.</p>
+      <p>Choose the appropriate term from the drop-down menu, using instructions in the <a href="https://docs.google.com/document/d/1nuRXzWLd8GltAyrOV7-7aFhDDczq7yoLamxjKwPFnws/edit?tab=t.jpt4epy7k88q#bookmark=kix.a9bm20kga6pf">processing manual</a> for guidance.</p>
     repository_processing_note_tooltip: |
       <p>Do not use this field.</p>
     extents_tooltip: |
       <p>The extent element helps researchers understand the overall amount of content in a collection and also yields information that is important for the Bentley's collection management practices.</p>
       <p>As with dates, ArchiveSpace permits the documentation of very granular information about extents, including the type of extent measurement (e.g., "linear feet" or "oversize folders") and summary information about the containers.</p>
-      <p>Refer to the <a href="https://sites.google.com/a/umich.edu/bhl-archival-curation/processing/processing-workflow/description/archival-description/common-archival-elements#h.9diuqwjgb6wz">processing manual</a> for additional information.</p>
+      <p>Refer to the <a href="https://docs.google.com/document/d/1nuRXzWLd8GltAyrOV7-7aFhDDczq7yoLamxjKwPFnws/edit?tab=t.jpt4epy7k88q#bookmark=kix.9bn642yhgxr0">processing manual</a> for additional information.</p>
     notes_tooltip: |
-      <p>See the processing manual section on <a href="https://sites.google.com/a/umich.edu/bhl-archival-curation/processing/processing-workflow/description/archival-description/general#h.xtj3tu6lj9hx">resource notes</a>.</p>
+      <p>See the processing manual section on <a href="https://docs.google.com/document/d/1nuRXzWLd8GltAyrOV7-7aFhDDczq7yoLamxjKwPFnws/edit?tab=t.jpt4epy7k88q#bookmark=id.a28naiaf4jfg">resource notes</a>.</p>
     instances_tooltip: |
       <p>Do not associate instances with top-level resource records.</p>
     language_tooltip: |
       <p>Record the primary language of the materials described by the resource record. As only one language may be entered here, you will also use the "Language of Materials" note to document this information.</p>
     linked_agents_tooltip: |
-        <p>DO NOT create new agents. Determine if you are creating a person, family, or corporate body and search for the relevant agent. If you would like to create an agent that is not in the repository, consult with the Lead Archivist for Collections Management.</p>
+        <p>DO NOT create new agents. Determine if you are creating a person, family, or corporate body and search for the relevant agent. If you would like to create an agent that is not in the repository, consult with the Assistant Director for Collections Management.</p>
         <p>Only associate linked agents with Resource records, not Archival Objects.</p>
     subjects_tooltip: |
-        <p>DO NOT create new subjects. Please search for appropriate subjects to describe the collection. If you would like use a subject heading that is not in the repository, consult with the Lead Archivist for Collections Management.</p>
+        <p>DO NOT create new subjects. Please search for appropriate subjects to describe the collection. If you would like use a subject heading that is not in the repository, consult with the Assistant Director for Archivist for Collections Management.</p>
         <p>Only associate subjects with resource records, not archival objects.</p>
     dates_tooltip: |
         <p>Identifies and records the date(s) that pertain to the creation, assembly, accumulation, and/or maintenance and use of the materials being described.</p>
-        <p>See DACS 2.4 and the <a href="https://sites.google.com/a/umich.edu/bhl-archival-curation/processing/processing-workflow/description/archival-description/common-archival-elements#h.ur8legqsz0xa">processing manual</a> for additional information.</p>
+        <p>See DACS 2.4 and the <a href="https://docs.google.com/document/d/1nuRXzWLd8GltAyrOV7-7aFhDDczq7yoLamxjKwPFnws/edit?tab=t.jpt4epy7k88q#bookmark=kix.tgy8bku7uygp">processing manual</a> for additional information.</p>
     extents_tooltip: |
         <p>Indicates the extent and the physical nature of the materials being described.</p>
-        <p>See DACS 2.5 and the <a href="https://sites.google.com/a/umich.edu/bhl-archival-curation/processing/processing-workflow/description/archival-description/common-archival-elements#h.9diuqwjgb6wz">processing manual</a>.</p>
+        <p>See DACS 2.5 and the <a href="https://docs.google.com/document/d/1nuRXzWLd8GltAyrOV7-7aFhDDczq7yoLamxjKwPFnws/edit?tab=t.jpt4epy7k88q#bookmark=kix.9bn642yhgxr0">processing manual</a>.</p>
     external_documents_tooltip: |
       <p>Do not add external documents to resources.</p>
     rights_statements_tooltip: |
@@ -295,7 +295,7 @@ en:
       <p>Once digital material has been transferred off of removable media, indicate which of the removable media indicated above has been transferred.</p>
       <p>Refer to the Bentley's <a href="https://sites.google.com/a/umich.edu/bhl-archival-curation/accessions/archivesspace-accessions">accessioning guidelines</a> for more information.</p>
     condition_description_tooltip: |
-      <p>This free-text field should be used to note any conservation issues or preservation concerns related to materials in the accession, including those specific to physical, analog, digital, or oversize materials. Entering this information in a dedicated text field will help highlight and draw attention to the issues so that the Lead Archivist for Collections Management or processing staff may take appropriate steps. The accessioning archivist should also make a conservation request through the Google Form. When entering information, the accessioning archivist should be as specific as possible about the nature, severity, and extent of the problem.</p>
+      <p>This free-text field should be used to note any conservation issues or preservation concerns related to materials in the accession, including those specific to physical, analog, digital, or oversize materials. Entering this information in a dedicated text field will help highlight and draw attention to the issues so that the Assistant Director for Collections Management or processing staff may take appropriate steps. The accessioning archivist should also make a conservation request through the Google Form. When entering information, the accessioning archivist should be as specific as possible about the nature, severity, and extent of the problem.</p>
     disposition_tooltip: |
       <p>Use this free-text field to document how potential separations associated with the accession will be handled.</p>
       <p>The options for separation include:</p>
@@ -375,7 +375,7 @@ en:
       <p>Record both "deacessions" and "separations" in an ArchivesSpace deaccession record.</p>
       <p>Refer to the Bentley's <a href="https://sites.google.com/a/umich.edu/bhl-archival-curation/accessions/archivesspace-accessions">accessioning guidelines</a> for more information.</p>
     collection_management_tooltip: |
-      <p>The accessioning archivist will fill out the following two fields of the Collection Management section: processing priority and processing status. The remaining sections will be filled out by the Lead Archivist for Collections Management.</p>
+      <p>The accessioning archivist will fill out the following two fields of the Collection Management section: processing priority and processing status. The remaining sections will be filled out by the Assistant Director for Collections Management.</p>
       <p>Refer to the Bentley's <a href="https://sites.google.com/a/umich.edu/bhl-archival-curation/accessions/archivesspace-accessions">accessioning guidelines</a> for more information.</p>
     dates_tooltip: |
       <p>Do not add Dates to accessions. More precise inclusive and bulk dates will be added to ArchivesSpace resources during processing. If you know an approximate date range for the materials in a given accession, indicate that in the content description text box.</p>
@@ -399,7 +399,7 @@ en:
     processing_priority_tooltip: |
       <p>Select the appropriate processing priority (High, Medium, Low) from the dropdown menu. The processing priority is determined by the field archivist responsible for the acquisition.</p>
     processing_status_tooltip: |
-      <p>The accessioning archivist should select the processing status for the collection when material is initially received. In most cases this will be “backlog.” When the collection is assigned to a processor, the Lead Archivist for Collection Management, will update this field to indicate that the material is “in progress” and “complete” once the finding aid (and all other descriptive tools) is posted online.</p>
+      <p>The accessioning archivist should select the processing status for the collection when material is initially received. In most cases this will be “backlog.” When the collection is assigned to a processor, the Assistant Director for Collection Management, will update this field to indicate that the material is “in progress” and “complete” once the finding aid (and all other descriptive tools) is posted online.</p>
 
   archival_record_date:
     <<: *date_attributes
